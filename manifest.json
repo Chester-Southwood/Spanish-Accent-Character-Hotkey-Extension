@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Spanish Accent Character Hotkey Extension",
+    "version": "0.1",
+    "description": "Simple application that mirrors SpanishDict hotkeys for accent characters.",
+    "content_scripts": [{
+        "matches": [
+          "<all_urls>"
+        ],
+        "run_at": "document_end", 
+        "js": ["accent_character_hotkeys.js"],
+        "all_frames": false
+      }]
+}
