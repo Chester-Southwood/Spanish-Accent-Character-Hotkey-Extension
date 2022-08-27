@@ -26,7 +26,6 @@ window.addEventListener("keydown", function(event) {
 window.addEventListener("keyup", (event) => isAccentOn = false, true);
 
 function getFirstInputTypeSelector() {
-  console.log(document.activeElement.tagName);
   if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') return document.activeElement;
   
   const inputSelector = document.querySelector('INPUT');
